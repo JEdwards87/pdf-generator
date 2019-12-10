@@ -1,33 +1,47 @@
-function initialize() {
+function startProg() {
     const inquirer = require("axios");
     const axios = require("axios");
     const
     const fs = require("fs");
-
     let name;
     let company;
     let actualName;
     let urlImage;
     let location;
     let githubProfile;
-    let blog;
-    let following;
     let followers;
-    let bio;
-    let repos;
     let stars;
+    let repos;
+    let following;
     let favColor;
-
+    
     inquirer.prompt([{
         message: "Enter github username",
-        name: "name"
+        name: "enteredName"
     },
     {
         message: "What is your favorite color?",
-        name: "color"
+        name: "enteredColor"
     }])
+    .then(function ({ enteredName, enteredColor }) {
+        username = enteredName;
+        favColor = enteredColor;
+        const queryUrl = `https://api.github.com/users/${username}`;
+        gitQuery(queryUrl);
+    });
+    Function gitQuery()
+
     
     
+
+
+
+
+
+
+
+
+
 
 
 }
