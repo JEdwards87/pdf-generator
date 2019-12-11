@@ -7,8 +7,8 @@ I WANT a developer profile generator
 
 SO THAT I can easily prepare reports for stakeholders
 
-This is and app that gets usr input from the command line and retrieves information
-from git hub and uses it to generae a pdf file.
+This is an app that gets user input from the command line and retrieves information
+from git hub and uses it to generate a pdf file.
 
 ![pdfgen](https://user-images.githubusercontent.com/57024833/70593543-1427e700-1ba3-11ea-83f2-c0f7ad5d035a.gif)
 
